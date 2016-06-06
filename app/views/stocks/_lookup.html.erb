@@ -2,7 +2,7 @@
   <h3>Search for Stocks</h3>
   <%= form_tag search_stocks_path, remote: true, method: :get, id: "stock-lookup-form" do %>
     <div class="form-group row no-padding text-center col-md-12">
-      <div class="col-md-10">
+      <div class="col-md-10 col-md-offset-0">
         <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true, class: "form-control search-box input-lg" %>
       </div>
       <div class="col-md-2">
@@ -14,7 +14,8 @@
   <% end %>
   <%= render "common/spinner" %>
   <% if @stock %>
-    <div id="stock-lookup-results" class="well results-block">
+  <div class="results-wrapper">
+    <div id="stock-lookup-results" class="well results-block col-xs-12">
       <strong>Symbol:</strong> <%= @stock.ticker %>
       <strong>Name:</strong> <%= @stock.name %>
       <strong>Price:</strong> <%= @stock.price %>
@@ -33,6 +34,7 @@
         </span>
       <% end %>
     </div>
+  </div>
   <% end %>
   <div id="stock-lookup-errors"></div>
 </div>
