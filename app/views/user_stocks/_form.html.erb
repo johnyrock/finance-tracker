@@ -1,4 +1,4 @@
-<%= form_for(@user_stock) do |f| %>
+<!--<%= form_for(@user_stock) do |f| %>
   <% if @user_stock.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user_stock.errors.count, "error") %> prohibited this user_stock from being saved:</h2>
@@ -21,5 +21,27 @@
   </div>
   <div class="actions">
     <%= f.submit %>
+  </div>
+<% end %>-->
+
+<% if @user_stock.errors.any? %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-0">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <%= pluralize(@user_stock.errors.count, "error") %>
+            The following error(s) occured:
+          </h2>
+          <div class="panel-body">
+            <ul>
+              <% @user_stock.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>
