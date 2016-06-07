@@ -23,3 +23,19 @@ var hide_spinner = function(){
 var show_spinner = function(){
   $("#spinner").show();
 }
+
+var hide_stock_list = function(){
+  $("#stock-list").hide();
+}
+
+var show_stock_list = function(){
+  $("#stock-list").show();
+}
+
+var hide_stock_lookup = function(){
+  $("#stock-lookup-results").hide();
+}
+
+var show_stock_lookup = function(){
+  $("#stock-lookup-results").show();
+}
