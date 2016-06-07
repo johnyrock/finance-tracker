@@ -3,5 +3,14 @@
 }
 
 .results-wrapper {
-  padding-left: 15px;
+  padding: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+  padding-bottom: 15px !important;
+}
+
+.left-padding {
+  padding-left: 15px !important;
 }
