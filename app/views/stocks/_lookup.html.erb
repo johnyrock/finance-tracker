@@ -12,7 +12,9 @@
       </div>
     </div>
   <% end %>
-  <%= render "common/spinner" %>
+  <div class="col-md-12 center spinner-padding">
+    <%= render "common/spinner" %>
+  </div>
   <% if @stock %>
   <div class="results-wrapper">
     <div id="stock-lookup-results" class="well results-block col-xs-12">
