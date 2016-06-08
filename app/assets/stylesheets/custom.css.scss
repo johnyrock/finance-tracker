@@ -1,6 +1,5 @@
 .results-block {
   display: inline-block;
-  padding-bottom: 0 !important;
 }
 
 .no-padding {
@@ -27,7 +26,6 @@
   .btn-danger:hover {
     background-color: darken(#d9534f, 20%) !important;
   }
-  
 }
   
 .spinner-padding {
@@ -39,7 +37,7 @@
   padding-bottom: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 0 !important;
   background-color: #737373;
   color: #ffffff;
 }
