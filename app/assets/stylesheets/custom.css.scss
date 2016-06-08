@@ -37,3 +37,12 @@
 .spinner-padding {
   padding-bottom: 15px !important;
 }
+
+@media (max-width: 978px) {
+  .left-padding {
+    padding-left: 0 !important;
+  }
+  .stock-lookup-btn {
+    padding-top: 15px !important;
+  }
+}
