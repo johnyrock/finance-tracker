@@ -39,3 +39,19 @@ var hide_stock_lookup = function(){
 var show_stock_lookup = function(){
   $("#stock-lookup-results").show();
 }
+
+var hide_friend_list = function(){
+  $("#friend-list").hide();
+}
+
+var show_friend_list = function(){
+  $("#friend-list").show();
+}
+
+var hide_friend_lookup = function(){
+  $("#friend-lookup-results").hide();
+}
+
+var show_friend_lookup = function(){
+  $("#friend-lookup-results").show();
+}
